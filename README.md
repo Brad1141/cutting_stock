@@ -77,18 +77,18 @@ Next we mutate the organism for the next iteration. To mutate an organism&#39;s 
 
 **Output**
 
-<img src="CuttingStockPictures/cs7.png" width="400" height="400">
+<img src="CuttingStockPictures/cs7.png" width="300" height="200">
 
 This means we need to cut 27 rolls according to pattern 1, 8 rolls according to pattern 2, 29rolls according to pattern 3, 4 rolls to pattern 4, 0 rolls to pattern 5, and 39 rolls to pattern 6. To better visualize what we are doing, let&#39;s turn the pattern combination into a matrix representing the total number of rolls we would have.
 
-![](RackMultipart20220220-4-1c5p7wc_html_86d7deab580e4d63.png)
+<img src="CuttingStockPictures/cs8.png" width="300" height="200">
 
 This means that the total number of rolls we made is…
 
-![](RackMultipart20220220-4-1c5p7wc_html_7141ec9b21486160.png)
+<img src="CuttingStockPictures/cs9.png" width="300" height="200">
 
 So our waste matrix (rolls we made - the actual order) is…
 
-![](RackMultipart20220220-4-1c5p7wc_html_315a0696fbc4bd96.png)
+<img src="CuttingStockPictures/cs10.png" width="300" height="200">
 
 We will have a total waste of 15 rolls (9 + 5 + 1), and this is the minimum amount of waste that will be produced if we complete an order for 80 rolls of 4 width paper, 50 rolls of 6 width paper, and 100 rolls of 7 width paper.
