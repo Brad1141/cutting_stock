@@ -10,7 +10,7 @@ The cutting stock problem is an optimization problem where we have to fill out a
 
 Let's say that I have an industrial paper-making machine that can only create rolls of paper with a width of 100 units. This is a problem for my customer, because he doesn't want paper with a width of 100, he wants a width of 90. That means to complete his order I would have to waste about 10 units of paper.
 
-![](RackMultipart20220220-4-1c5p7wc_html_8c88db48eddf93a1.png)
+<img src="CuttingStockPictures/cs1.png" width="300" height="200">
 
 **Our cutting stock problem**
 
