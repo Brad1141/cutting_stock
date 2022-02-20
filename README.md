@@ -36,7 +36,7 @@ First, we can think of the ways that we can cut 15 into 4, 6, and 7 as patterns.
 
 Now we can rephrase the problem. What we want to know is how many times we need to cut each pattern so that we satisfy the customer with the least amount of waste. We can represent this as an equation.
 
-<img src="CuttingStockPictures/cs1.png" width="800" height="300">
+<img src="CuttingStockPictures/cs2.png" width="800" height="200">
 
 **Putting it all together**
 
@@ -46,19 +46,17 @@ We need to find values for [x1, x2, x3, x4, x5, x6] such that the equation above
 
 **Organism**
 
-Each organism in the generation is an object of the Organism class. The class has two properties, _pattCom_ and _cost_.
+Each organism in the generation is an object of the Organism class. The class has two properties, _pattern_Com_ and _cost_.
 
-**pattCom** : an array of 6 binary strings which tell us how many of each pattern to use. For example, [001, 000, 000, 000, 000, 010] tells us to use pattern 1 one time and pattern 6 two times.
-
-![](RackMultipart20220220-4-1c5p7wc_html_c332dce00c6c29e2.png)
+**pattern_Com** : an array of 6 binary strings which tell us how many of each pattern to use. For example, [001, 000, 000, 000, 000, 010] tells us to use pattern 1 one time and pattern 6 two times.
 
 **Cost** : this is the total amount of waste that the pattern combination produces. If the combination is unable to meet the customer demands we give it a cost of 100,000 which is an arbitrary high value.
 
 Cost function: to find the total fitness of the organism, we use this formula.
 
-![](RackMultipart20220220-4-1c5p7wc_html_398506ccd8374300.png)
+<img src="CuttingStockPictures/cs4.png" width="800" height="200">
 
-Where x1...x6 are the pattern combinations in the matrix pattCom
+Where x1...x6 are the pattern combinations in the matrix pattern_Com
 
 **Picking the best organisms:**
 
@@ -68,18 +66,18 @@ The best organisms are selected using elite selection. This means that the top h
 
 After the best organism is selected they are randomly paired then crossed with another organism. Let&#39;s say there are two random organisms o1 and o2. Crossing works by splitting the binary string of both organisms into two halves part 1 and part 2. Then o1 and o2 swap their part 1 strings. We do this for every binary string inside of the pattern combination matrix.
 
-![](RackMultipart20220220-4-1c5p7wc_html_3caf1c9837099906.png)
+<img src="CuttingStockPictures/cs5.png" width="800" height="200">
 
 **Mutation** :
 
 Next we mutate the organism for the next iteration. To mutate an organism&#39;s binary string, we go through each binary string inside of the pattern combination matrix and pick a random number from 0 to 6, afterwards, we change the value of the character. So a value of 1 will become 0 and vice versa.
 
-![](RackMultipart20220220-4-1c5p7wc_html_8f2c3893ae83df74.png)
+<img src="CuttingStockPictures/cs6.png" width="800" height="200">
 
 
 **Output**
 
-![](RackMultipart20220220-4-1c5p7wc_html_4e40361e4bbfedb7.png)
+<img src="CuttingStockPictures/cs7.png" width="400" height="400">
 
 This means we need to cut 27 rolls according to pattern 1, 8 rolls according to pattern 2, 29rolls according to pattern 3, 4 rolls to pattern 4, 0 rolls to pattern 5, and 39 rolls to pattern 6. To better visualize what we are doing, let&#39;s turn the pattern combination into a matrix representing the total number of rolls we would have.
 
