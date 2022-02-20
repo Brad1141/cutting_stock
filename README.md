@@ -3,6 +3,10 @@
 ### Description
 An genetic algorithm designed to find an optimal solution to a given cutting stock problem
 
+### Launch
+1. Download the git repo
+2. run the **cutting_stock.ipynb** file in jupyter notebook
+
 ## The Cutting Stock problem
 The cutting stock problem is an optimization problem where we have to fill out an order of paper while producing the least amount of scrap possible.
 
