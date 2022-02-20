@@ -36,7 +36,7 @@ First, we can think of the ways that we can cut 15 into 4, 6, and 7 as patterns.
 
 Now we can rephrase the problem. What we want to know is how many times we need to cut each pattern so that we satisfy the customer with the least amount of waste. We can represent this as an equation.
 
-![](RackMultipart20220220-4-1c5p7wc_html_ed877a433cdcf25c.png)
+<img src="CuttingStockPictures/cs1.png" width="800" height="300">
 
 **Putting it all together**
 
