@@ -3,7 +3,7 @@
 ### Description
 An genetic algorithm designed to find an optimal solution to a given cutting stock problem
 
-**The Cutting Stock problem**
+## The Cutting Stock problem
 The cutting stock problem is an optimization problem where we have to fill out an order of paper while producing the least amount of scrap possible.
 
 **The Cutting Stock problem illustrated**
@@ -11,8 +11,6 @@ The cutting stock problem is an optimization problem where we have to fill out a
 Let's say that I have an industrial paper-making machine that can only create rolls of paper with a width of 100 units. This is a problem for my customer, because he doesn't want paper with a width of 100, he wants a width of 90. That means to complete his order I would have to waste about 10 units of paper.
 
 <img src="CuttingStockPictures/cs1.png" width="300" height="200">
-
-**Our cutting stock problem**
 
 **In written language**
 
@@ -42,7 +40,7 @@ Now we can rephrase the problem. What we want to know is how many times we need 
 
 We need to find values for [x1, x2, x3, x4, x5, x6] such that the equation above is greater than or equal to the customer&#39;s order while at the same time minimizing the waste that is being used.
 
-**Design**
+## Algorithm Design
 
 **Organism**
 
@@ -75,7 +73,7 @@ Next we mutate the organism for the next iteration. To mutate an organism&#39;s 
 <img src="CuttingStockPictures/cs6.png" width="800" height="200">
 
 
-**Output**
+## Output
 
 <img src="CuttingStockPictures/cs7.png" width="300" height="200">
 
