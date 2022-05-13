@@ -1,7 +1,7 @@
 # Cutting Stock
 
 ### Description
-An genetic algorithm designed to find an optimal solution to a given cutting stock problem
+A genetic algorithm designed to find an optimal solution to a given cutting stock problem
 
 ### Launch
 1. Download the git repo
